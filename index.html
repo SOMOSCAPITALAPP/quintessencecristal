@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quintessence Cristal | Bracelets en pierres naturelles</title>
-  <meta name="description" content="Quintessence Cristal presente une selection sobre de bracelets en pierres naturelles, disponible sur Shopify, Amazon et YouTube.">
+  <meta name="description" content="Quintessence Cristal présente une sélection sobre de bracelets en pierres naturelles, disponible sur Shopify, Amazon et YouTube.">
   <style>
     :root {
       --bg: #f6f2ec;
@@ -120,10 +120,6 @@
 
     .hero {
       margin-top: 18px;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 18px;
-      align-items: start;
     }
 
     .panel {
@@ -136,6 +132,13 @@
 
     .intro {
       padding: 30px 30px 26px;
+    }
+
+    .hero-merged {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 22px;
+      align-items: start;
     }
 
     .eyebrow {
@@ -237,7 +240,7 @@
     }
 
     .visuals {
-      padding: 18px;
+      padding-top: 2px;
     }
 
     .gallery {
@@ -358,8 +361,15 @@
       gap: 12px;
     }
 
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
     .brand-card,
-    .cta {
+    .cta,
+    .social-card {
       padding: 20px;
       border: 1px solid var(--line);
       border-radius: 18px;
@@ -369,13 +379,15 @@
     }
 
     .brand-card h3,
-    .cta h3 {
+    .cta h3,
+    .social-card h3 {
       font-size: 1.1rem;
       line-height: 1.2;
     }
 
     .brand-card p,
-    .cta p {
+    .cta p,
+    .social-card p {
       margin-top: 8px;
       color: var(--muted);
       font-size: 0.94rem;
@@ -435,6 +447,7 @@
       .hero,
       .products,
       .brands,
+      .socials,
       .cta {
         grid-template-columns: 1fr;
       }
@@ -459,15 +472,20 @@
       }
 
       .intro,
-      .visuals,
       .brand-card,
       .cta,
-      .product {
+      .product,
+      .social-card {
         padding: 16px;
       }
 
+      .hero-merged,
       .gallery {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .visuals {
+        padding-top: 8px;
       }
 
       .product {
@@ -488,52 +506,54 @@
         </span>
       </a>
       <nav class="nav">
-        <a href="#selection">Selection</a>
+        <a href="#selection">Sélection</a>
         <a href="#maisons">Maisons</a>
-        <a href="#liens">Acces</a>
+        <a href="#liens">Accès</a>
       </nav>
     </header>
 
     <section class="hero">
-      <div class="panel intro">
-        <span class="eyebrow">Quintessence Cristal</span>
-        <h1>Une selection de bracelets en pierres naturelles, simple et soignee.</h1>
-        <p>
-          Quintessence Cristal rassemble des pieces a l'allure minerale nette, choisies pour la qualite visuelle des pierres
-          et la sobriete de leur presence. Cette page presente les references les plus lisibles de l'univers Felicidade
-          et Vera Mentis, avec un acces direct aux boutiques.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#selection">Voir la selection</a>
-          <a class="btn" href="https://felicidadeboutique.com/" target="_blank" rel="noreferrer">Boutique Shopify</a>
-          <a class="btn" href="https://www.amazon.fr/stores/FELICIDADEBijouxMin%C3%A9raux/page/22675922-0C42-4847-9DE6-DF5905D5DE6C?lp_asin=B0D2VFSL94&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override" target="_blank" rel="noreferrer">Amazon Felicidade</a>
+      <div class="panel intro hero-merged">
+        <div>
+          <span class="eyebrow">Quintessence Cristal</span>
+          <h1>Une sélection de bracelets en pierres naturelles, simple et soignée.</h1>
+          <p>
+            Quintessence Cristal réunit des pièces à l’allure minérale nette, choisies pour la qualité visuelle des pierres
+            et la sobriété de leur présence. La page présente les références les plus lisibles de l’univers Felicidade
+            et Vera Mentis, avec un accès direct aux boutiques et aux contenus de marque.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#selection">Voir la sélection</a>
+            <a class="btn" href="https://felicidadeboutique.com/" target="_blank" rel="noreferrer">Boutique Shopify</a>
+            <a class="btn" href="https://www.amazon.fr/stores/FELICIDADEBijouxMin%C3%A9raux/page/22675922-0C42-4847-9DE6-DF5905D5DE6C?lp_asin=B0D2VFSL94&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override" target="_blank" rel="noreferrer">Amazon Felicidade</a>
+          </div>
+          <div class="notes">
+            <div class="note">
+              <strong>Sélection resserrée</strong>
+              <span>Peu de références, mais des pièces fortes et faciles à situer.</span>
+            </div>
+            <div class="note">
+              <strong>Ligne plus fine</strong>
+              <span>Un rythme plus calme, des contrastes plus doux, une lecture plus naturelle.</span>
+            </div>
+            <div class="note">
+              <strong>Accès directs</strong>
+              <span>Shopify, Amazon et YouTube restent visibles sans alourdir l’ensemble.</span>
+            </div>
+          </div>
         </div>
-        <div class="notes">
-          <div class="note">
-            <strong>Selection resserree</strong>
-            <span>Peu de references, mais des pieces fortes et faciles a situer.</span>
-          </div>
-          <div class="note">
-            <strong>Ligne plus fine</strong>
-            <span>Un rythme plus calme, des contrastes plus doux, une lecture plus naturelle.</span>
-          </div>
-          <div class="note">
-            <strong>Acces directs</strong>
-            <span>Shopify, Amazon et YouTube restent accessibles sans alourdir la page.</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="panel visuals">
-        <div class="gallery">
-          <div class="shot tall">
-            <img src="optimized/oeil-tigre.jpg" alt="Bracelet oeil de tigre">
-          </div>
-          <div class="shot">
-            <img src="optimized/quartz-rose.jpg" alt="Bracelet quartz rose">
-          </div>
-          <div class="shot">
-            <img src="optimized/labradorite.jpg" alt="Bracelet labradorite foncee">
+        <div class="visuals">
+          <div class="gallery">
+            <div class="shot tall">
+              <img src="optimized/oeil-tigre.jpg" alt="Bracelet œil de tigre">
+            </div>
+            <div class="shot">
+              <img src="optimized/quartz-rose.jpg" alt="Bracelet quartz rose">
+            </div>
+            <div class="shot">
+              <img src="optimized/labradorite.jpg" alt="Bracelet labradorite foncée">
+            </div>
           </div>
         </div>
       </div>
@@ -541,24 +561,24 @@
 
     <section id="selection">
       <div class="section-head">
-        <span class="eyebrow">Selection</span>
-        <h2>Quelques pieces, choisies pour leur caractere et leur clarte visuelle.</h2>
+        <span class="eyebrow">Sélection</span>
+        <h2>Quelques pièces, choisies pour leur caractère et leur clarté visuelle.</h2>
         <p>
-          L'ensemble reste volontairement court. Chaque bracelet occupe une place lisible, avec une image plus contenue
-          et un texte recentre sur la matiere, la tonalite et l'allure generale.
+          L’ensemble reste volontairement court. Chaque bracelet occupe une place lisible, avec une image plus contenue
+          et un texte recentré sur la matière, la tonalité et l’allure générale.
         </p>
       </div>
 
       <div class="products">
         <article class="product">
           <div class="product-thumb">
-            <img src="optimized/oeil-tigre.jpg" alt="Bracelet oeil de tigre 8 mm">
+            <img src="optimized/oeil-tigre.jpg" alt="Bracelet œil de tigre 8 mm">
           </div>
           <div class="product-copy">
-            <h3>Oeil de Tigre 8MM</h3>
+            <h3>Œil de Tigre 8MM</h3>
             <p>
-              Une presence chaude et structuree, avec une lecture immediate de la pierre. La piece garde une allure nette,
-              facile a porter au quotidien comme a offrir.
+              Une présence chaude et structurée, avec une lecture immédiate de la pierre. La pièce garde une allure nette,
+              facile à porter au quotidien comme à offrir.
             </p>
             <div class="meta">
               <span>8,50 EUR</span>
@@ -575,8 +595,8 @@
           <div class="product-copy">
             <h3>Quartz Rose 8MM</h3>
             <p>
-              Une teinte douce, lumineuse et calme. Le bracelet apporte une note plus delicate a la selection sans perdre
-              en sobriete.
+              Une teinte douce, lumineuse et calme. Le bracelet apporte une note plus délicate à la sélection sans perdre
+              en sobriété.
             </p>
             <div class="meta">
               <span>8,54 EUR</span>
@@ -588,12 +608,12 @@
 
         <article class="product">
           <div class="product-thumb">
-            <img src="optimized/labradorite.jpg" alt="Bracelet labradorite foncee 8 mm">
+            <img src="optimized/labradorite.jpg" alt="Bracelet labradorite foncée 8 mm">
           </div>
           <div class="product-copy">
-            <h3>Labradorite Foncee 8MM</h3>
+            <h3>Labradorite Foncée 8MM</h3>
             <p>
-              Le modele le plus dense de la page, avec des nuances grises et bleutees plus profondes. L'ensemble donne
+              Le modèle le plus dense de la page, avec des nuances grises et bleutées plus profondes. L’ensemble donne
               une impression plus mature et plus premium.
             </p>
             <div class="meta">
@@ -611,8 +631,8 @@
           <div class="product-copy">
             <h3>Apatite Bleue 8MM</h3>
             <p>
-              Une pierre plus vive, plus bleue, qui apporte une respiration a l'ensemble. La couleur reste visible sans
-              rompre l'equilibre de la page.
+              Une pierre plus vive, plus bleue, qui apporte une respiration à l’ensemble. La couleur reste visible sans
+              rompre l’équilibre de la page.
             </p>
             <div class="meta">
               <span>14,90 EUR</span>
@@ -621,15 +641,33 @@
             <a class="mini-link" href="https://amzn.eu/d/0fNTdpcz" target="_blank" rel="noreferrer">Voir sur Amazon</a>
           </div>
         </article>
+
+        <article class="product">
+          <div class="product-thumb">
+            <img src="optimized/jade.jpg" alt="Bracelet jade clair 8 mm">
+          </div>
+          <div class="product-copy">
+            <h3>Jade Clair 8MM</h3>
+            <p>
+              Une présence plus douce, presque laiteuse, qui éclaire la sélection. La pièce apporte une note plus paisible
+              et une variation subtile dans l’ensemble.
+            </p>
+            <div class="meta">
+              <span>15,70 EUR</span>
+              <span>Note 4,3 / 5</span>
+            </div>
+            <a class="mini-link" href="https://amzn.eu/d/0aDJs7y6" target="_blank" rel="noreferrer">Voir sur Amazon</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section id="maisons">
       <div class="section-head">
         <span class="eyebrow">Maisons</span>
-        <h2>Deux acces distincts, presentes avec plus de retenue.</h2>
+        <h2>Deux accès distincts, présentés avec plus de retenue.</h2>
         <p>
-          Felicidade constitue le coeur de l'offre. Vera Mentis prolonge la selection avec une orientation complementaire,
+          Felicidade constitue le cœur de l’offre. Vera Mentis prolonge la sélection avec une orientation complémentaire,
           dans un cadre volontairement discret.
         </p>
       </div>
@@ -638,8 +676,8 @@
         <article class="brand-card">
           <h3>Felicidade</h3>
           <p>
-            La ligne principale autour des bracelets en pierres naturelles, avec une esthetique accessible, claire et facile
-            a parcourir entre Shopify et Amazon.
+            La ligne principale autour des bracelets en pierres naturelles, avec une esthétique accessible, claire et facile
+            à parcourir entre Shopify et Amazon.
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="https://felicidadeboutique.com/" target="_blank" rel="noreferrer">Shopify</a>
@@ -650,8 +688,8 @@
         <article class="brand-card">
           <h3>Vera Mentis</h3>
           <p>
-            Une presence plus complementaire, utile pour etendre l'univers tout en gardant une page d'accueil concise et
-            plus elegante.
+            Une présence plus complémentaire, utile pour étendre l’univers tout en gardant une page d’accueil concise et
+            plus élégante.
           </p>
           <div class="actions">
             <a class="btn" href="https://www.amazon.fr/stores/VeraMentis/page/A1574914-F004-4BBD-90D3-74D0ED7368CE?lp_asin=B0DN1ZGT3L&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override" target="_blank" rel="noreferrer">Amazon Vera Mentis</a>
@@ -660,13 +698,56 @@
       </div>
     </section>
 
+    <section id="reseaux">
+      <div class="section-head">
+        <span class="eyebrow">Réseaux</span>
+        <h2>YouTube et les accès de marque retrouvent une place claire.</h2>
+        <p>
+          Les contenus éditoriaux accompagnent les boutiques. YouTube reste le point d’entrée le plus visible pour découvrir
+          l’univers Quintessence Cristal, tandis que Shopify et Amazon prolongent naturellement la visite.
+        </p>
+      </div>
+
+      <div class="socials">
+        <article class="social-card">
+          <h3>YouTube</h3>
+          <p>
+            La chaîne Quintessence Cristal permet de retrouver l’univers visuel de la marque, ses inspirations et ses contenus.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.youtube.com/@quintessencecristal" target="_blank" rel="noreferrer">Voir la chaîne</a>
+          </div>
+        </article>
+
+        <article class="social-card">
+          <h3>Shopify</h3>
+          <p>
+            La boutique Felicidade présente l’offre complète dans un cadre plus développé, avec une navigation pensée pour la collection.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://felicidadeboutique.com/" target="_blank" rel="noreferrer">Ouvrir Shopify</a>
+          </div>
+        </article>
+
+        <article class="social-card">
+          <h3>Amazon</h3>
+          <p>
+            Les deux vitrines Amazon restent accessibles pour une consultation rapide des références, des notes et des fiches produit.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://www.amazon.fr/stores/FELICIDADEBijouxMin%C3%A9raux/page/22675922-0C42-4847-9DE6-DF5905D5DE6C?lp_asin=B0D2VFSL94&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override" target="_blank" rel="noreferrer">Amazon Felicidade</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="liens">
       <div class="cta">
         <div>
-          <span class="eyebrow">Acces</span>
-          <h3>Un point d'entree simple vers les boutiques et les contenus de marque.</h3>
+          <span class="eyebrow">Accès</span>
+          <h3>Un point d’entrée simple vers les boutiques et les contenus de marque.</h3>
           <p>
-            La page reste volontairement legere. Elle cadre l'univers, pose quelques pieces fortes et laisse ensuite la place
+            La page reste volontairement légère. Elle cadre l’univers, pose quelques pièces fortes et laisse ensuite la place
             aux espaces de vente et de contenu.
           </p>
           <div class="actions">
@@ -684,12 +765,13 @@
     <footer class="footer">
       <div>
         <strong>Quintessence Cristal</strong>
-        <p>Bracelets en pierres naturelles, selection resserree et acces directs aux boutiques.</p>
+        <p>Bracelets en pierres naturelles, sélection resserrée et accès directs aux boutiques.</p>
       </div>
       <div class="footer-links">
         <a href="#haut">Haut de page</a>
-        <a href="#selection">Selection</a>
-        <a href="#liens">Acces</a>
+        <a href="#selection">Sélection</a>
+        <a href="#reseaux">Réseaux</a>
+        <a href="#liens">Accès</a>
       </div>
     </footer>
   </div>
