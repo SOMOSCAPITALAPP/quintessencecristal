@@ -94,8 +94,9 @@
 
     .brand-copy strong {
       display: block;
-      font-size: 0.95rem;
+      font-size: 1.18rem;
       font-weight: 600;
+      line-height: 1.1;
     }
 
     .brand-copy span {
@@ -111,6 +112,7 @@
       gap: 10px 16px;
       color: var(--muted);
       font-size: 0.9rem;
+      justify-content: flex-end;
     }
 
     .nav a:hover,
@@ -455,6 +457,10 @@
       .cta-shot {
         max-width: 180px;
       }
+
+      .topbar {
+        border-radius: 24px;
+      }
     }
 
     @media (max-width: 720px) {
@@ -465,6 +471,27 @@
       .topbar,
       .footer {
         display: grid;
+      }
+
+      .topbar {
+        gap: 12px;
+        padding: 14px;
+        border-radius: 18px;
+      }
+
+      .brand-copy strong {
+        font-size: 1.05rem;
+      }
+
+      .brand-copy span {
+        font-size: 0.8rem;
+      }
+
+      .nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px 14px;
+        font-size: 0.88rem;
       }
 
       .intro,
@@ -506,7 +533,6 @@
         <a href="#selection">Sélection</a>
         <a href="#marques">Nos Marques</a>
         <a href="#experience">Expérience</a>
-        <a href="#acces">Accès</a>
       </nav>
     </header>
 
