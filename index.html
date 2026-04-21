@@ -246,7 +246,8 @@
     .gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
+      align-items: stretch;
     }
 
     .shot {
@@ -254,17 +255,12 @@
       border-radius: 16px;
       border: 1px solid var(--line);
       background: var(--surface-strong);
-      aspect-ratio: 1 / 1.05;
+      aspect-ratio: 0.88 / 1.12;
     }
 
     .shot img {
       height: 100%;
       object-fit: cover;
-    }
-
-    .shot.tall {
-      grid-row: span 2;
-      aspect-ratio: 1 / 1.28;
     }
 
     section {
@@ -540,14 +536,11 @@
 
         <div class="visuals">
           <div class="gallery">
-            <div class="shot tall">
+            <div class="shot">
               <img src="optimized/oeil-tigre.jpg" alt="Bracelet œil de tigre">
             </div>
             <div class="shot">
-              <img src="optimized/quartz-rose.jpg" alt="Bracelet quartz rose">
-            </div>
-            <div class="shot">
-              <img src="optimized/labradorite.jpg" alt="Bracelet labradorite foncée">
+              <img src="optimized/labradorite-normal.jpg" alt="Bracelet labradorite porté">
             </div>
           </div>
         </div>
@@ -645,6 +638,25 @@
               <span>★★★★★</span>
             </div>
             <a class="mini-link" href="https://amzn.eu/d/06bhTerM" target="_blank" rel="noreferrer">Voir sur Amazon</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-thumb">
+            <img src="optimized/labradorite-normal.jpg" alt="Bracelet labradorite 8 mm">
+          </div>
+          <div class="product-copy">
+            <h3>Labradorite 8MM</h3>
+            <p>
+              Une labradorite plus claire, aux nuances minérales subtiles.<br>
+              Un bracelet naturel, élégant et très facile à intégrer au quotidien.
+            </p>
+            <p>👉 Le choix le plus minéral.</p>
+            <div class="meta">
+              <span>Collection Felicidade</span>
+              <span>Labradorite naturelle</span>
+            </div>
+            <a class="mini-link" href="https://www.amazon.fr/stores/FELICIDADEBijouxMin%C3%A9raux/page/22675922-0C42-4847-9DE6-DF5905D5DE6C?lp_asin=B0D2VFSL94&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override" target="_blank" rel="noreferrer">Voir sur Amazon</a>
           </div>
         </article>
 
